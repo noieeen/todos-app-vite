@@ -105,7 +105,7 @@ onMounted(() => {
       </form>
     </section>
 
-    <section class="todo-list">
+    <section class="todo-list" v-if="todos_asc.length">
       <h3>TODO LIST</h3>
       <div class="list" id="todo-list">
         <div
