@@ -26,6 +26,10 @@ watch(
 );
 
 const addTodo = () => {
+  if (name.value.trim() === "") {
+    alert("Please Fill Name");
+  }
+
   if (input_content.value.trim() === "" || input_category.value === null) {
     return;
   }
@@ -132,6 +136,5 @@ onMounted(() => {
         </div>
       </div>
     </section>
-
   </main>
 </template>
